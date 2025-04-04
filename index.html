@@ -54,11 +54,20 @@ Nekobolt is a tiny game studio run by one engineer and one artist. We LOVE makin
 <br>
 <br>
 <img class ="img.logo" src="nekobolt_bottle_logo.png" alt="Nekobolt Logo" width="256" height="256">
-
 <br>
 <br>
-Copyright (c) 2023 -> Nekobolt. All Rights Reserved
+<p>Email: <span id="email">company [at] nekobolt [dot] net</span></p>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var emailElement = document.getElementById("email");
+        var emailText = emailElement.textContent;
+        var emailAddress = emailText.replace(" [at] ", "@").replace(" [dot] ", ".");
+        emailElement.innerHTML = '<a href="mailto:' + emailAddress + '">' + emailAddress + '</a>';
+    });
+</script>
+<br>
+<br>
+Copyright (c) 2025 -> Nekobolt. All Rights Reserved
 
 </body>
 </html>
-
