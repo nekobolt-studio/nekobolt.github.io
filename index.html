@@ -1,83 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
-<meta name="keywords" content="Nekobolt, game studio, indie games, Unity assets, game development, Baking Success, tiny game studio">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
+    <meta name="keywords" content="Nekobolt, game studio, indie games, Unity assets, game development, Baking Success, tiny game studio">
 
-<meta property="og:title" content="Nekobolt - Tiny Game Studio">
-<meta property="og:description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
-<meta property="og:image" content="nekobolt_apple_touch_icon_512x512.png">
-<meta property="og:url" content="https://nekobolt.net/">
-<meta property="og:type" content="website">
+    <meta property="og:title" content="Nekobolt - Tiny Game Studio">
+    <meta property="og:description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
+    <meta property="og:image" content="nekobolt_apple_touch_icon_512x512.png">
+    <meta property="og:url" content="https://nekobolt.net/">
+    <meta property="og:type" content="website">
 
-<style>
-body 
-{
-  padding: 25px;
-  background-color: #1E845A;
-  color: #FFA9CD;
-  font-size: 25px;
-  text-align: center;
-}
-.center {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-img.logo {
-  height: 15%;
-  width: 15%;
-}
+    <title>Nekobolt - Tiny Game Studio</title>
 
-</style>
-<title>Nekobolt - Tiny Game Studio</title>
-<h1>Nekobolt.net</h1>
-<link rel="icon" type="image/x-icon" href="nekobolt_favicon_32x32.png">
-<link rel="apple-touch-icon" href="nekobolt_apple_touch_icon_512x512.png"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="nekobolt_favicon_32x32.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="nekobolt_apple_touch_icon_512x512.png">
+
 </head>
 <body>
-Nekobolt is a tiny game studio run by one engineer and one artist. We LOVE making Games & Assets!
-<br>
-<br>
 
-<a href="https://assetstore.unity.com/publishers/3741">Unity Asset Store</a>
-<br>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="nekobolt_bottle_logo.png" alt="Nekobolt Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#assets">Assets</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle theme">☀️</button> <!-- Simple icon toggle -->
+        </div>
+    </header>
 
-<a href="https://twitter.com/NekoboltTeam">Twitter</a>
-<br>
+    <main class="container">
+        <section id="home">
+            <h1>Welcome to Nekobolt!</h1>
+            <p>Nekobolt is a tiny game studio run by one engineer and one artist. We LOVE making Games & Assets!</p>
+            <!-- Add more engaging intro content maybe? -->
+        </section>
 
-<a href="https://www.facebook.com/Nekobolt">Facebook</a>
-<br>
+        <section id="games">
+            <h2>Our Games</h2>
+            <p>Check out our latest creation, Baking Success!</p>
+            <ul>
+                <li><a href="https://store.steampowered.com/app/2279940/Baking_Success/" target="_blank" rel="noopener noreferrer">Baking Success on Steam</a></li>
+                <li><a href="https://www.bigfishgames.com/games/7613/baking-success/" target="_blank" rel="noopener noreferrer">Baking Success on Big Fish Games</a></li>
+            </ul>
+             <!-- Add game images/details later -->
+        </section>
 
-<a href="https://www.youtube.com/user/Nekobolt">Youtube</a>
-<br>
+        <section id="assets">
+            <h2>Unity Assets</h2>
+            <p>Explore our high-quality assets available on the Unity Asset Store.</p>
+            <a href="https://assetstore.unity.com/publishers/3741" class="button" target="_blank" rel="noopener noreferrer">Visit Asset Store</a>
+             <!-- Add asset images/details later -->
+        </section>
 
-<a href="https://store.steampowered.com/app/2279940/Baking_Success/">Baking Success - Steam</a>
-<br>
+        <section id="connect">
+             <h2>Connect With Us</h2>
+             <p>Follow our journey and stay updated:</p>
+             <ul>
+                <li><a href="https://twitter.com/NekoboltTeam" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://www.facebook.com/Nekobolt" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.youtube.com/user/Nekobolt" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+            </ul>
+            <p>Contact us directly:</p>
+            <p><span id="email">company [at] nekobolt [dot] net</span></p>
+        </section>
+    </main>
 
-<a href="https://www.bigfishgames.com/games/7613/baking-success/">Baking Success - BFG</a>
-<br>
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2024 Nekobolt. All Rights Reserved</p>
+        </div>
+    </footer>
 
-<br>
-<br>
-<img class="logo" src="nekobolt_bottle_logo.png" alt="Nekobolt Logo" width="256" height="256">
-<br>
-<br>
-<p>Email: <span id="email">company [at] nekobolt [dot] net</span></p>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-        var emailElement = document.getElementById("email");
-        var emailText = emailElement.textContent;
-        var emailAddress = emailText.replace(" [at] ", "@").replace(" [dot] ", ".");
-        emailElement.innerHTML = '<a href="mailto:' + emailAddress + '">' + emailAddress + '</a>';
-    });
-</script>
-<br>
-<br>
-Copyright (c) 2024 -> Nekobolt. All Rights Reserved
+    <script>
+        // Theme Toggle Script
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const currentTheme = localStorage.getItem('theme');
+
+        // Apply saved theme on load
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-theme');
+            themeToggle.textContent = '🌙'; // Moon for dark theme
+            themeToggle.setAttribute('aria-label', 'Switch to light theme');
+        } else {
+             themeToggle.textContent = '☀️'; // Sun for light theme
+             themeToggle.setAttribute('aria-label', 'Switch to dark theme');
+        }
+
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            let theme = 'light';
+            if (body.classList.contains('dark-theme')) {
+                theme = 'dark';
+                themeToggle.textContent = '🌙';
+                 themeToggle.setAttribute('aria-label', 'Switch to light theme');
+            } else {
+                 themeToggle.textContent = '☀️';
+                 themeToggle.setAttribute('aria-label', 'Switch to dark theme');
+            }
+            localStorage.setItem('theme', theme);
+        });
+
+        // Email Obfuscation Script (from original file)
+        document.addEventListener("DOMContentLoaded", function() {
+            var emailElement = document.getElementById("email");
+            if (emailElement) { // Check if element exists
+                var emailText = emailElement.textContent;
+                var emailAddress = emailText.replace(" [at] ", "@").replace(" [dot] ", ".");
+                emailElement.innerHTML = '<a href="mailto:' + emailAddress + '">' + emailAddress + '</a>';
+            }
+        });
+
+        // Simple active link highlighting for nav (basic)
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('main section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) { // Adjust offset as needed
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+                 // Highlight home if nothing else is active and at top
+                 else if (current === '' && link.getAttribute('href') === '#home') {
+                     link.classList.add('active');
+                 }
+            });
+             // Ensure Home is active if scrolled to the very top
+             if (window.pageYOffset < 50) {
+                 navLinks.forEach(link => link.classList.remove('active'));
+                 document.querySelector('nav a[href="#home"]').classList.add('active');
+             }
+        });
+
+
+    </script>
 
 </body>
 </html>
