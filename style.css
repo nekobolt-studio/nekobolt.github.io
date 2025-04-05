@@ -375,4 +375,10 @@ section {
     display: block; /* Prevents extra space below */
     margin: 15px auto; /* Center image */
     border-radius: 8px;
+}
+
+/* --- Consulting Page Specific Styles --- */
+
+.clients-heading {
+    margin-top: 30px; /* Add space above the Clients heading */
 } 
