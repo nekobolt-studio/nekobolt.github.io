@@ -169,4 +169,165 @@ section {
     .container {
         padding: 0 15px;
     }
+}
+
+/* --- Team Page Specific Styles --- */
+
+#team-content .team-member {
+    margin-bottom: 30px; /* Space below each member */
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); /* Subtle separator */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack image and text vertically by default */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+}
+
+#team-content .team-member:last-child {
+    border-bottom: none;
+}
+
+.avatar {
+    max-width: 150px; /* Control avatar size */
+    height: auto;
+    border-radius: 50%; /* Make avatars circular */
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-color); /* Add a little border */
+}
+
+/* Style artist highlights with accent color */
+#team-content .artist .avatar {
+    border-color: var(--accent-color); /* Pink border for artist */
+}
+
+#team-content .artist h2 {
+    color: var(--accent-color); /* Pink heading for artist */
+}
+
+@media (min-width: 768px) {
+    #team-content {
+        display: flex;
+        gap: 40px; /* Space between team members */
+        justify-content: space-around; /* Distribute space */
+    }
+
+    #team-content .team-member {
+        flex: 1; /* Allow members to grow equally */
+        border-bottom: none; /* Remove bottom border in flex layout */
+        padding-bottom: 0;
+        /* Keep align-items: center and text-align: center from above */
+    }
+
+     /* Optional: Adjust avatar size on larger screens if needed */
+    /* .avatar {
+        max-width: 200px;
+    } */
+}
+
+/* --- Games Page Specific Styles --- */
+
+.game-header-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Optional: slightly rounded corners */
+}
+
+.game-short-description {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: gray; /* Subtle color for the quote */
+}
+
+body.dark-theme .game-short-description {
+    color: lightgray;
+}
+
+.key-features {
+    margin-bottom: 20px;
+    padding-left: 20px; /* Indent list items */
+}
+
+.key-features li {
+    margin-bottom: 5px;
+}
+
+.store-links {
+    margin-top: 20px;
+}
+
+.store-links .button {
+    margin-right: 10px; /* Space between buttons */
+}
+
+.stay-tuned {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.stay-tuned h2 {
+     color: var(--primary-color); /* Use primary color for this heading too */
+}
+
+/* --- Index/Home Page Specific Styles --- */
+
+#hero {
+    text-align: center;
+    margin-bottom: 50px; /* More space after hero */
+}
+
+.hero-image {
+    max-width: 450px; /* Reduced size */
+    width: 90%; /* Adjusted responsive width slightly */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border-radius: 8px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: gray;
+}
+
+body.dark-theme .tagline {
+    color: lightgray;
+}
+
+#quick-links {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Ensure connect section email link uses accent color */
+#connect a {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* --- Experiments Page Specific Styles --- */
+
+.experiment-entry {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2); /* Separator if multiple experiments */
+}
+
+.experiment-image {
+    max-width: 70%; /* Make image smaller within its container */
+    height: auto;
+    display: block; /* Prevents extra space below */
+    margin: 15px auto; /* Center image */
+    border-radius: 8px;
 } 

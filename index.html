@@ -36,9 +36,12 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#assets">Assets</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="assets.html">Assets</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="experiments.html">Experiments</a></li>
                 </ul>
             </nav>
             <button id="theme-toggle" aria-label="Toggle theme">☀️</button> <!-- Simple icon toggle -->
@@ -46,39 +49,28 @@
     </header>
 
     <main class="container">
-        <section id="home">
+        <section id="hero">
             <h1>Welcome to Nekobolt!</h1>
-            <p>Nekobolt is a tiny game studio run by one engineer and one artist. We LOVE making Games & Assets!</p>
-            <!-- Add more engaging intro content maybe? -->
+            <img src="engineer_artist_wave.png" alt="Engineer and Artist waving" class="hero-image">
+            <p class="tagline">A tiny game studio run by one engineer and one artist. We LOVE making Games & Assets!</p>
+             <!-- Optional: Add a primary call to action button here? -->
         </section>
 
-        <section id="games">
-            <h2>Our Games</h2>
-            <p>Check out our latest creation, Baking Success!</p>
-            <ul>
-                <li><a href="https://store.steampowered.com/app/2279940/Baking_Success/" target="_blank" rel="noopener noreferrer">Baking Success on Steam</a></li>
-                <li><a href="https://www.bigfishgames.com/games/7613/baking-success/" target="_blank" rel="noopener noreferrer">Baking Success on Big Fish Games</a></li>
-            </ul>
-             <!-- Add game images/details later -->
+        <section id="quick-links">
+            <h2>Explore Our Work</h2>
+            <div class="cta-buttons">
+                <a href="games.html" class="button">View Our Games</a>
+                <a href="assets.html" class="button secondary">Browse Unity Assets</a>
+                 <a href="team.html" class="button">Meet the Team</a>
+            </div>
         </section>
 
-        <section id="assets">
-            <h2>Unity Assets</h2>
-            <p>Explore our high-quality assets available on the Unity Asset Store.</p>
-            <a href="https://assetstore.unity.com/publishers/3741" class="button" target="_blank" rel="noopener noreferrer">Visit Asset Store</a>
-             <!-- Add asset images/details later -->
-        </section>
 
         <section id="connect">
              <h2>Connect With Us</h2>
-             <p>Follow our journey and stay updated:</p>
-             <ul>
-                <li><a href="https://twitter.com/NekoboltTeam" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="https://www.facebook.com/Nekobolt" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.youtube.com/user/Nekobolt" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-            </ul>
-            <p>Contact us directly:</p>
-            <p><span id="email">company [at] nekobolt [dot] net</span></p>
+             <!-- Simplified connect section - social links could go in footer -->
+             <p>Have questions or want to collaborate?</p>
+            <p>Contact us: <span id="email">company [at] nekobolt [dot] net</span></p>
         </section>
     </main>
 
@@ -88,96 +80,7 @@
         </div>
     </footer>
 
-    <script>
-        // Theme Toggle Script
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-        function applyTheme(theme) {
-            if (theme === 'dark') {
-                body.classList.add('dark-theme');
-                themeToggle.textContent = '🌙';
-                themeToggle.setAttribute('aria-label', 'Switch to light theme');
-            } else {
-                body.classList.remove('dark-theme');
-                themeToggle.textContent = '☀️';
-                themeToggle.setAttribute('aria-label', 'Switch to dark theme');
-            }
-        }
-
-        // Determine initial theme: 1. LocalStorage, 2. System Pref, 3. Default (Dark)
-        let currentTheme = localStorage.getItem('theme');
-        if (!currentTheme) {
-            if (prefersDarkScheme.matches) {
-                currentTheme = 'dark';
-            } else {
-                currentTheme = 'dark'; // Default to dark if no system pref or system is light
-            }
-        }
-
-        // Apply the determined theme on initial load
-        applyTheme(currentTheme);
-
-        // Listener for the toggle button
-        themeToggle.addEventListener('click', () => {
-            let newTheme = body.classList.contains('dark-theme') ? 'light' : 'dark';
-            applyTheme(newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-
-        // Optional: Listen for changes in system preference
-        // This will automatically switch the theme if the system setting changes
-        // while the user is on the page, ONLY if they haven't manually toggled.
-        // Remove this block if you don't want this behavior.
-        // prefersDarkScheme.addEventListener('change', (e) => {
-        //     if (!localStorage.getItem('theme')) { // Only change if no manual preference is set
-        //         applyTheme(e.matches ? 'dark' : 'light');
-        //     }
-        // });
-
-        // Email Obfuscation Script (from original file)
-        document.addEventListener("DOMContentLoaded", function() {
-            var emailElement = document.getElementById("email");
-            if (emailElement) { // Check if element exists
-                var emailText = emailElement.textContent;
-                var emailAddress = emailText.replace(" [at] ", "@").replace(" [dot] ", ".");
-                emailElement.innerHTML = '<a href="mailto:' + emailAddress + '">' + emailAddress + '</a>';
-            }
-        });
-
-        // Simple active link highlighting for nav (basic)
-        const navLinks = document.querySelectorAll('nav a');
-        const sections = document.querySelectorAll('main section');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) { // Adjust offset as needed
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-                 // Highlight home if nothing else is active and at top
-                 else if (current === '' && link.getAttribute('href') === '#home') {
-                     link.classList.add('active');
-                 }
-            });
-             // Ensure Home is active if scrolled to the very top
-             if (window.pageYOffset < 50) {
-                 navLinks.forEach(link => link.classList.remove('active'));
-                 document.querySelector('nav a[href="#home"]').classList.add('active');
-             }
-        });
-
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
