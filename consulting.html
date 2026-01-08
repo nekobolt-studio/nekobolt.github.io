@@ -8,30 +8,29 @@
 
     <meta property="og:title" content="Nekobolt - Consulting">
     <meta property="og:description" content="Nekobolt offers game development and technical consulting services including web design, VR, 3D printing, and CI/CD pipelines (Jenkins).">
-    <meta property="og:image" content="https://nekobolt.net/nekobolt_bottle_logo.png">
+    <meta property="og:image" content="https://nekobolt.net/assets/images/nekobolt_bottle_logo.png">
     <meta property="og:url" content="https://nekobolt.net/consulting.html">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nekobolt - Consulting">
     <meta name="twitter:description" content="Nekobolt offers game development and technical consulting services including web design, VR, 3D printing, and CI/CD pipelines (Jenkins).">
-    <meta name="twitter:image" content="https://nekobolt.net/nekobolt_bottle_logo.png">
+    <meta name="twitter:image" content="https://nekobolt.net/assets/images/nekobolt_bottle_logo.png">
 
     <link rel="canonical" href="https://nekobolt.net/consulting.html">
 
     <title>Nekobolt - Consulting</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="nekobolt_favicon_32x32.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="nekobolt_apple_touch_icon_512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/nekobolt_favicon_32x32.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/images/nekobolt_apple_touch_icon_512x512.png">
 
 </head>
 <body>
@@ -39,7 +38,7 @@
     <header>
         <div class="container header-content">
             <a href="index.html" class="logo">
-                <img src="nekobolt_bottle_logo.png" alt="Nekobolt Logo">
+                <img src="assets/images/nekobolt_bottle_logo.png" alt="Nekobolt Logo">
             </a>
             <nav id="main-nav">
                 <ul>
@@ -58,25 +57,34 @@
     <main class="container">
         <section id="consulting-content">
             <h1>Consulting Services</h1>
-            <p>Leverage our expertise to bring your technical projects to life! We offer consulting services at reasonable hourly rates in a variety of areas, including:</p>
-            <ul>
-                <li>Website Design & Implementation (like the one you're browsing!)</li>
-                <li>Virtual Reality (VR) Development & Prototyping</li>
-                <li>3D Printing Design & Consultation</li>
-                <li>CI/CD Pipeline Setup & Optimization (Jenkins, etc.)</li>
-                <li>General Game Development & Technical Art Support</li>
-            </ul>
+            <p class="intro-text">Leverage our expertise to bring your technical projects to life. We offer consulting in a variety of areas:</p>
             
-            <h2 class="clients-heading">Clients</h2>
-            <p><a href="https://kuuasema.com/" target="_blank" rel="noopener noreferrer">Kuuasema</a> - CI/CD Jenkins pipeline consulting</p>
+            <div class="services-grid">
+                <article class="card">
+                    <h3>Web & VR</h3>
+                    <p>Website design, implementation, and Virtual Reality prototyping.</p>
+                </article>
+                <article class="card">
+                    <h3>Technical Design</h3>
+                    <p>3D Printing design and General Game Development support.</p>
+                </article>
+                <article class="card">
+                    <h3>DevOps</h3>
+                    <p>CI/CD Pipeline setup and optimization (Jenkins, etc.).</p>
+                </article>
+            </div>
+            
+            <h2 class="clients-heading">Previous Clients</h2>
+            <div class="card client-card">
+                <p><strong><a href="https://kuuasema.com/" target="_blank" rel="noopener noreferrer">Kuuasema</a></strong> - CI/CD Jenkins pipeline consulting</p>
+            </div>
             
             <h2>Get in Touch</h2>
-            <p>Interested in discussing your project? Contact us via email to explore how we can help you achieve your goals.</p>
-            <p><span id="email">company [at] nekobolt [dot] net</span></p>
-            <!-- Consider adding a more formal contact form later if needed -->
-
+            <p>Interested in discussing your project? Contact us via email:</p>
+            <div class="card email-card">
+                <p><span id="email">company [at] nekobolt [dot] net</span></p>
+            </div>
         </section>
-
     </main>
 
     <footer>
@@ -85,7 +93,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html> 
