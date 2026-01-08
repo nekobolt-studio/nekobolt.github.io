@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
-    <meta name="keywords" content="Nekobolt, game studio, indie games, Unity assets, game development, Baking Success, tiny studio, game assets, consulting">
+    <meta name="description" content="Nekobolt is a tiny game studio creating fun games, apps, and high-quality Unity assets. Explore our work and connect with us!">
+    <meta name="keywords" content="Nekobolt, game studio, indie games, apps, Unity assets, game development, Baking Success, tiny studio, game assets, consulting">
 
     <meta property="og:title" content="Nekobolt - Tiny Game Studio">
-    <meta property="og:description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
+    <meta property="og:description" content="Nekobolt is a tiny game studio creating fun games, apps, and high-quality Unity assets. Explore our work and connect with us!">
     <meta property="og:image" content="https://nekobolt.net/assets/images/nekobolt_apple_touch_icon_512x512.png">
     <meta property="og:url" content="https://nekobolt.net/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nekobolt - Tiny Game Studio">
-    <meta name="twitter:description" content="Nekobolt is a tiny game studio creating fun games like Baking Success and high-quality Unity assets. Explore our work and connect with us!">
+    <meta name="twitter:description" content="Nekobolt is a tiny game studio creating fun games, apps, and high-quality Unity assets. Explore our work and connect with us!">
     <meta name="twitter:image" content="https://nekobolt.net/assets/images/nekobolt_apple_touch_icon_512x512.png">
 
     <link rel="canonical" href="https://nekobolt.net/">
@@ -23,7 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -37,38 +37,191 @@
 
     <header>
         <div class="container header-content">
-            <a href="/" class="logo">
+            <a href="#" class="logo">
                 <img src="assets/images/nekobolt_bottle_logo.png" alt="Nekobolt Logo">
             </a>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="assets.html">Assets</a></li>
-                    <li><a href="consulting.html">Consulting</a></li>
-                    <li><a href="experiments.html">Experiments</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#assets">Assets</a></li>
+                    <li><a href="#consulting">Consulting</a></li>
+                    <li><a href="#experiments">Experiments</a></li>
+                    <li><a href="#connect">Contact</a></li>
                 </ul>
+                <div id="nav-indicator" class="nav-indicator"></div>
             </nav>
             <button id="hamburger-button" class="hamburger-button" aria-label="Toggle menu" aria-expanded="false">☰</button>
         </div>
     </header>
 
     <main class="container">
+        <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <h1>Welcome to Nekobolt!</h1>
-                <p class="tagline">A tiny game studio run by one engineer and one artist. We LOVE making Games & Assets!</p>
-                <div class="cta-buttons">
-                    <a href="games.html" class="button">View Our Games</a>
-                    <a href="assets.html" class="button secondary">Browse Unity Assets</a>
-                </div>
+                <h1 class="glitch-text">
+                    <span style="font-size: 0.6em; opacity: 0.9; vertical-align: middle; display: block; margin-bottom: -5px; letter-spacing: 2px;">Welcome to</span>
+                    <span class="firework-wrapper">
+                        <span style="color: var(--primary-color); text-shadow: 2px 2px 0px var(--secondary-color);">Nekobolt</span>
+                        <span class="firework-particle" style="--x: -40px; --y: -40px; top: 20%; left: 10%; animation-delay: 0s;"></span>
+                        <span class="firework-particle" style="--x: 40px; --y: -40px; top: 20%; left: 90%; animation-delay: 0.3s;"></span>
+                        <span class="firework-particle" style="--x: -50px; --y: 0px; top: 50%; left: 0%; animation-delay: 0.6s;"></span>
+                        <span class="firework-particle" style="--x: 50px; --y: 0px; top: 50%; left: 100%; animation-delay: 0.9s;"></span>
+                        <span class="firework-particle" style="--x: -40px; --y: 40px; top: 80%; left: 10%; animation-delay: 1.2s;"></span>
+                        <span class="firework-particle" style="--x: 40px; --y: 40px; top: 80%; left: 90%; animation-delay: 1.5s;"></span>
+                        <span class="firework-particle" style="--x: 0px; --y: -60px; top: 0%; left: 50%; animation-delay: 1.8s;"></span>
+                        <span class="firework-particle" style="--x: 0px; --y: 60px; top: 100%; left: 50%; animation-delay: 2.1s;"></span>
+                        <span class="firework-particle" style="--x: -25px; --y: -25px; top: 30%; left: 20%; background: var(--secondary-color); box-shadow: 0 0 5px var(--secondary-color); animation-delay: 0.4s;"></span>
+                        <span class="firework-particle" style="--x: 25px; --y: -25px; top: 30%; left: 80%; background: var(--secondary-color); box-shadow: 0 0 5px var(--secondary-color); animation-delay: 1.1s;"></span>
+                    </span>
+                </h1>
+                <p class="tagline">A tiny game studio run by one engineer and one artist.<br>We LOVE making <span class="highlight-text">Games</span>, <span class="highlight-text">Apps</span> and <span class="highlight-text">Assets</span>!</p>
             </div>
             <img src="assets/images/engineer_artist_wave.png" alt="Engineer and Artist waving" class="hero-image">
         </section>
 
+        <div class="retro-separator">
+            <div class="retro-line"></div>
+            <div class="pacman-unit">
+                <div class="pacman-body"></div>
+                <div class="pacman-trail"></div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2 class="glitch-text">The Team</h2>
+            <div id="team-content">
+                <article class="team-member">
+                    <img src="assets/images/engineer.png" alt="The Engineer" class="avatar">
+                    <h3 class="glitch-text engineer-text">The Engineer</h3>
+                    <p>The technical wizard behind Nekobolt, bringing games and experiments to life with over a decade of game dev experience.</p>
+                </article>
+                <article class="team-member artist">
+                    <img src="assets/images/artist.png" alt="The Artist" class="avatar">
+                    <h3 class="glitch-text">The Artist</h3>
+                    <p>The creative powerhouse crafting Nekobolt's visuals, sounds, stories, and overall artistic vision.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="retro-separator">
+            <div class="retro-line"></div>
+            <div class="pacman-unit">
+                <div class="pacman-body"></div>
+                <div class="pacman-trail"></div>
+            </div>
+        </div>
+
+        <!-- Games Section -->
+        <section id="games">
+            <h2 class="glitch-text">Our Games</h2>
+            <article class="game-entry">
+                <h3 class="glitch-text">Baking Success</h3>
+                <img src="assets/images/baking_success_header.jpg" alt="Baking Success Header" class="game-header-image">
+                <p class="game-short-description">
+                    <em>Join Fay on her Flying Bakery and travel the world, serving delicious baked goods in this challenging Time Management game!</em>
+                </p>
+                <h3>Key Features:</h3>
+                <ul class="key-features">
+                    <li>Intuitive and challenging gameplay</li>
+                    <li>4 different game modes: Story, Expert, Challenge and Endless</li>
+                    <li>Journey through different lands with new customers and bakery items to unlock</li>
+                    <li>Decorate & upgrade your bakery</li>
+                    <li>A fairy tale inspired visual style & hand-drawn cutscenes</li>
+                    <li>Minigames that add variety and fun</li>
+                    <li>10 challenging achievements to test your skills</li>
+                    <li>A soundtrack of soothing and uplifting instrumental music</li>
+                </ul>
+                <p class="store-links">
+                    Available on:
+                    <a href="https://store.steampowered.com/app/2279940/Baking_Success/" class="button secondary" target="_blank" rel="noopener noreferrer">Steam</a>
+                    <a href="https://www.bigfishgames.com/games/7613/baking-success/" class="button secondary" target="_blank" rel="noopener noreferrer">Big Fish Games</a>
+                </p>
+            </article>
+        </section>
+
+        <div class="retro-separator">
+            <div class="retro-line"></div>
+            <div class="pacman-unit">
+                <div class="pacman-body"></div>
+                <div class="pacman-trail"></div>
+            </div>
+        </div>
+
+        <!-- Unity Assets Section -->
+        <section id="assets">
+            <h2 class="glitch-text">Unity Assets</h2>
+            <p class="intro-text">High-quality tools and assets to accelerate your game development.</p>
+            <div class="card store-notice">
+                <p style="text-align: center;">Find all our assets on the <strong><a href="https://assetstore.unity.com/publishers/3741" target="_blank" rel="noopener noreferrer" class="glitch-text">Unity Asset Store</a></strong>.</p>
+            </div>
+        </section>
+
+        <div class="retro-separator">
+            <div class="retro-line"></div>
+            <div class="pacman-unit">
+                <div class="pacman-body"></div>
+                <div class="pacman-trail"></div>
+            </div>
+        </div>
+
+        <!-- Consulting Section -->
+        <section id="consulting">
+            <h2 class="glitch-text">Consulting Services</h2>
+            <p class="intro-text">Leverage our expertise to bring your technical projects to life. We offer consulting in a variety of areas:</p>
+            <div class="services-grid">
+                <article class="card">
+                    <h3 class="glitch-text">Web & VR</h3>
+                    <p>Website design, implementation, and Virtual Reality prototyping.</p>
+                </article>
+                <article class="card">
+                    <h3 class="glitch-text">Technical Design</h3>
+                    <p>3D Printing design and General Game Development support.</p>
+                </article>
+                <article class="card">
+                    <h3 class="glitch-text">DevOps</h3>
+                    <p>CI/CD Pipeline setup and optimization (Jenkins, etc.).</p>
+                </article>
+            </div>
+            <h3 class="glitch-text">Previous Clients</h3>
+            <div class="card client-card">
+                <p><strong><a href="https://kuuasema.com/" target="_blank" rel="noopener noreferrer">Kuuasema</a></strong> - CI/CD Jenkins pipeline consulting</p>
+            </div>
+        </section>
+
+        <div class="retro-separator">
+            <div class="retro-line"></div>
+            <div class="pacman-unit">
+                <div class="pacman-body"></div>
+                <div class="pacman-trail"></div>
+            </div>
+        </div>
+
+        <!-- Experiments Section -->
+        <section id="experiments">
+            <h2 class="glitch-text">Experiments & Prototypes</h2>
+            <p class="intro-text">A space for sharing ongoing experiments, prototypes, or thoughts. Things might be slow-burn projects or quick tests!</p>
+            <article class="experiment-entry card">
+                <h3 class="glitch-text">Games At Home (GAH)</h3>
+                <img src="assets/images/games_at_home_title.png" alt="Games At Home Title Graphic" class="experiment-image">
+                <p>Our very slowly brewing local co-op creation (1-4 players, shared screen)! Aiming for chaotic fun, a built-in level editor, and featuring the brilliant game design, ideas, and art contributions from our in-house junior talents.</p>
+                <p>We hope to bring it to Steam Early Access within the next couple of years.</p>
+                <p><em>Estimated completion date: ~2034? Maybe? Check back often!</em> 😉</p>
+            </article>
+        </section>
+
+        <div class="retro-separator">
+            <div class="retro-line"></div>
+            <div class="pacman-unit">
+                <div class="pacman-body"></div>
+                <div class="pacman-trail"></div>
+            </div>
+        </div>
+
         <section id="connect">
-             <h2>Connect With Us</h2>
+             <h2 class="glitch-text">Connect With Us</h2>
              <p>Have questions or want to collaborate?</p>
             <p>Contact us: <span id="email">company [at] nekobolt [dot] net</span></p>
             <div class="social-links">
