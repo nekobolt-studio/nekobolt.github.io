@@ -500,8 +500,8 @@ button:hover, .button:hover {
     box-shadow: 0 0 40px var(--secondary-color);
 }
 
-#team-content .team-member h2 {
-    margin-bottom: 0.5rem;
+#team-content .team-member h3 {
+    margin-bottom: 4rem;
     font-size: 1.75rem;
 }
 
@@ -594,6 +594,36 @@ button:hover, .button:hover {
     background: var(--card-bg);
     border-radius: var(--radius-lg);
     border: 2px dashed var(--secondary-color);
+}
+
+.game-logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.game-logos-grid > a, 
+.game-logos-grid > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    flex: 0 1 200px; /* Allow items to grow/shrink but target 200px */
+}
+
+.game-logo {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 90, 129, 0.3));
+    transition: var(--transition);
+}
+
+.game-logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px var(--primary-color));
 }
 
 /* Retro Separator (Pacman Edition) */
