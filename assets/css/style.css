@@ -838,10 +838,10 @@ button:hover, .button:hover {
 }
 
 @keyframes pacman-travel {
-    0% { transform: translateX(0); opacity: 0; }
+    0% { left: 0; opacity: 0; }
     0.5% { opacity: 1; }
     99.5% { opacity: 1; }
-    100% { transform: translateX(calc(100vw - 34px - 48px)); opacity: 0; }
+    100% { left: calc(100% - 34px); opacity: 0; }
 }
 
 @keyframes chomp-top {
