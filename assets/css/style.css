@@ -1032,6 +1032,12 @@ hr {
     text-shadow: 2px 2px 0px var(--primary-color) !important;
     letter-spacing: 1px;
     font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+#email:hover {
+    color: var(--secondary-color) !important;
+    text-decoration: none;
 }
 
 .social-links {
