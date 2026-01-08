@@ -137,7 +137,7 @@ function createPixelBurst(element) {
 const sections = document.querySelectorAll('section[id]');
 
 function highlightNav() {
-    if (isScrolling) return; // Don't fight with the click-triggered indicator move
+    if (isScrolling) return; 
     const scrollY = window.pageYOffset;
     
     sections.forEach(current => {
@@ -159,7 +159,16 @@ function highlightNav() {
     });
 }
 
-window.addEventListener('scroll', highlightNav);
+// Throttle scroll event for better performance
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(() => {
+            highlightNav();
+            scrollTimeout = null;
+        }, 100);
+    }
+});
 
 // Email Obfuscation Script
 document.addEventListener("DOMContentLoaded", function() {
@@ -170,7 +179,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var emailText = emailElement.textContent;
         if (emailText.includes(" [at] ")) {
             var emailAddress = emailText.replace(" [at] ", "@").replace(" [dot] ", ".");
-            emailElement.innerHTML = '<a href="mailto:' + emailAddress + '">' + emailAddress + '</a>';
+            emailElement.href = 'mailto:' + emailAddress;
+            emailElement.textContent = emailAddress;
         }
     }
 });
