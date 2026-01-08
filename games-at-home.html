@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games At Home (GAH) - Nekobolt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/nekobolt_favicon_32x32.png">
+    <style>
+        .details-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .back-link {
+            margin-top: 40px;
+        }
+        .coming-soon-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px var(--accent-color);
+        }
+    </style>
+</head>
+<body class="details-page">
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/nekobolt_bottle_logo.png" alt="Nekobolt Logo">
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#games" class="active">Games</a></li>
+                    <li><a href="index.html#connect">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container details-container">
+        <div class="coming-soon-badge">Early Prototype</div>
+        <h1 class="glitch-text">Games At Home (GAH)</h1>
+        
+        <div class="card" style="max-width: 800px; width: 100%;">
+            <img src="assets/images/gif_games_at_home.gif" alt="Games At Home Logo" class="game-card-logo" style="max-width: 400px; margin-bottom: 30px;">
+            <p class="intro-text" style="font-size: 1.2rem; margin-bottom: 30px;">
+                Our very slowly brewing local co-op creation (1-4 players, shared screen)! Aiming for chaotic fun, a built-in level editor, and featuring the brilliant game design, ideas, and art contributions from our in-house junior talents.
+            </p>
+            
+            <div class="retro-separator" style="margin: 20px 0;">
+                <div class="retro-line"></div>
+            </div>
+            
+            <h3 class="glitch-text" style="font-size: 1.2rem; margin-bottom: 20px;">Project Status</h3>
+            <p>We hope to bring it to Steam Early Access within the next couple of years.</p>
+            <p><em>Estimated completion date: ~2034? Maybe? Check back often!</em> 😉</p>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html#games" class="button secondary">← Back to Games</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2025 Nekobolt. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

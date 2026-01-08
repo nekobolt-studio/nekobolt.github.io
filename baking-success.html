@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Success - Nekobolt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/nekobolt_favicon_32x32.png">
+    <style>
+        .details-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .back-link {
+            margin-top: 40px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            box-shadow: var(--neon-glow);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: var(--radius-md);
+            border: 2px solid var(--primary-color);
+            box-shadow: var(--neon-glow);
+            margin: 30px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="details-page">
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/nekobolt_bottle_logo.png" alt="Nekobolt Logo">
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#games" class="active">Games</a></li>
+                    <li><a href="index.html#connect">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container details-container">
+        <div class="badge">Out Now</div>
+        <h1 class="glitch-text">Baking Success</h1>
+        
+        <div class="card" style="max-width: 800px; width: 100%;">
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/mTai954pp-4" 
+                        title="Baking Success Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="retro-separator" style="margin: 20px 0;">
+                <div class="retro-line"></div>
+            </div>
+            <p class="intro-text" style="font-size: 1.2rem; margin-top: 20px;">
+                Join Fay on her Flying Bakery and travel the world, serving delicious baked goods in this challenging Time Management game! 
+                Experience a fairy tale inspired visual style, multiple game modes, and a soothing soundtrack.
+            </p>
+            
+            <p class="store-links">
+                <a href="https://store.steampowered.com/app/2279940/Baking_Success/" class="button" target="_blank" rel="noopener noreferrer">Get it on Steam</a>
+                <a href="https://www.bigfishgames.com/games/7613/baking-success/" class="button secondary" target="_blank" rel="noopener noreferrer">Play on Big Fish Games</a>
+            </p>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html#games" class="button secondary">← Back to Games</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2025 Nekobolt. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
