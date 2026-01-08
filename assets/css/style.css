@@ -178,6 +178,19 @@ body::before {
     z-index: 2000;
 }
 
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 90, 129, 0.2));
+    transition: var(--transition);
+    margin-top: 2rem;
+}
+
+.hero-image:hover {
+    filter: drop-shadow(0 0 20px var(--primary-color));
+    transform: translateY(-5px);
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -321,7 +334,7 @@ h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     color: #ffffff !important;
     text-shadow: 2px 2px 0px var(--primary-color) !important;
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
 }
 
 h3 {
@@ -473,7 +486,20 @@ button:hover, .button:hover {
 
 /* --- Team Page Specific Styles --- */
 
-#team-content .team-member {
+#team-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #team-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.team-member {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -482,73 +508,41 @@ button:hover, .button:hover {
 }
 
 .avatar {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    margin-bottom: 24px;
-    border: 5px solid var(--primary-color);
-    padding: 8px;
-    background: var(--bg-color);
+    border: 6px solid var(--primary-color);
     box-shadow: var(--neon-glow);
+    margin-bottom: 30px;
+    object-fit: cover;
+    background: var(--card-bg);
     transition: var(--transition);
 }
 
-.avatar:hover {
-    transform: rotate(5deg) scale(1.1);
-    box-shadow: 0 0 40px var(--primary-color);
+.engineer-text {
+    color: var(--secondary-color) !important;
+    text-shadow: 2px 2px 0px var(--primary-color) !important;
 }
 
-#team-content .artist .avatar {
+.team-member:hover .avatar {
+    transform: scale(1.05) rotate(3deg);
     border-color: var(--secondary-color);
     box-shadow: var(--secondary-glow);
-}
-
-#team-content .artist .avatar:hover {
-    box-shadow: 0 0 40px var(--secondary-color);
-}
-
-#team-content .team-member h3 {
-    margin-bottom: 4rem;
-    font-size: 1.75rem;
-}
-
-#team-content .engineer-text {
-    color: var(--primary-color);
-    text-shadow: 2px 2px 0px var(--secondary-color);
-}
-
-#team-content .artist h3 {
-    color: var(--secondary-color);
-    text-shadow: 2px 2px 0px var(--primary-color);
-}
-
-@media (min-width: 768px) {
-    #team-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        width: 100%;
-    }
-
-    #team-content .team-member {
-        margin-bottom: 0;
-    }
 }
 
 /* --- Games Page Specific Styles --- */
 
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     width: 100%;
     margin-top: 40px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 800px) {
     .games-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
@@ -659,12 +653,23 @@ button:hover, .button:hover {
 }
 
 .game-logos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     width: 100%;
     margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .game-logos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .game-logos-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .game-logos-grid > a, 
@@ -673,7 +678,7 @@ button:hover, .button:hover {
     align-items: center;
     justify-content: center;
     transition: var(--transition);
-    flex: 0 1 200px; /* Allow items to grow/shrink but target 200px */
+    width: 100%;
 }
 
 .game-logo {
@@ -780,9 +785,12 @@ button:hover, .button:hover {
     50% { transform: rotate(35deg); }
 }
 
-/* --- Hero Section Fixes --- */
-#hero {
+/* --- Section Width Fixes --- */
+#hero, #team, #games, #assets, #consulting, #connect {
     width: 100%;
+}
+
+#hero {
     text-align: center;
 }
 
