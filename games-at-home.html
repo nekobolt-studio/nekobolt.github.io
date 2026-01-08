@@ -7,33 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.2">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.4">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/nekobolt_favicon_32x32.png">
-    <style>
-        .details-container {
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .back-link {
-            margin-top: 40px;
-        }
-        .coming-soon-badge {
-            display: inline-block;
-            padding: 8px 16px;
-            background: var(--accent-color);
-            color: var(--bg-color);
-            border-radius: var(--radius-sm);
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px var(--accent-color);
-        }
-    </style>
 </head>
 <body class="details-page">
     <header>
@@ -52,11 +27,11 @@
     </header>
 
     <main class="container details-container">
-        <div class="coming-soon-badge">Early Prototype</div>
+        <div class="coming-soon-badge" style="background: var(--accent-color); box-shadow: 0 0 10px var(--accent-color);">Early Prototype</div>
         <h1 class="glitch-text">Games At Home (GAH)</h1>
         
-        <div class="card" style="max-width: 800px; width: 100%;">
-            <img src="assets/images/gif_games_at_home.gif" alt="Games At Home Logo" class="game-card-logo" style="max-width: 400px; margin-bottom: 30px;">
+        <div class="card">
+            <img src="assets/images/gif_games_at_home.gif" alt="Games At Home Logo" class="game-card-logo" style="max-width: 100%; height: auto; margin-bottom: 30px;">
             <p class="intro-text" style="font-size: 1.2rem; margin-bottom: 30px;">
                 Our very slowly brewing local co-op creation (1-4 players, shared screen)! Aiming for chaotic fun, a built-in level editor, and featuring the brilliant game design, ideas, and art contributions from our in-house junior talents.
             </p>
