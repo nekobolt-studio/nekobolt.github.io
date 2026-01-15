@@ -551,6 +551,11 @@ button:hover, .button:hover {
     box-shadow: var(--secondary-glow) !important;
 }
 
+.artist-avatar:hover {
+    border-color: var(--primary-color) !important;
+    box-shadow: var(--neon-glow) !important;
+}
+
 .engineer-text {
     color: var(--secondary-color) !important;
     text-shadow: 2px 2px 0px var(--primary-color) !important;
