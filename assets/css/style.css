@@ -199,8 +199,11 @@ body::before {
 }
 
 .hero-image {
-    width: 100%;
+    width: 100vw;
     max-width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     height: auto;
     filter: drop-shadow(0 0 10px rgba(255, 90, 129, 0.2));
     margin-top: 0;
