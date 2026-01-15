@@ -546,8 +546,18 @@ button:hover, .button:hover {
     transition: var(--transition);
 }
 
+.engineer-avatar {
+    border-color: var(--secondary-color) !important;
+    box-shadow: var(--secondary-glow) !important;
+}
+
 .engineer-text {
     color: var(--secondary-color) !important;
+    text-shadow: 2px 2px 0px var(--primary-color) !important;
+}
+
+.artist-text {
+    color: #ffffff !important;
     text-shadow: 2px 2px 0px var(--primary-color) !important;
 }
 
