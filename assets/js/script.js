@@ -97,7 +97,7 @@ function updateIndicator(element) {
 
 function createPixelBurst(element) {
     const rect = element.getBoundingClientRect();
-    const colors = ['#FF5A81', '#79FFB2', '#FFD700', '#ffffff'];
+    const colors = ['#DE2B8C', '#79FFB2', '#FFD700', '#ffffff'];
     const particleCount = 15;
 
     for (let i = 0; i < particleCount; i++) {
