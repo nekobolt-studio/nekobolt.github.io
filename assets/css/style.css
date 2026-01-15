@@ -753,8 +753,8 @@ button:hover, .button:hover {
 /* --- Asset Images Grid --- */
 .asset-images-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+    gap: 20px;
     width: 100%;
     margin-top: 0; /* Margin handled by h2 or intro-text */
     padding: 0 10px;
