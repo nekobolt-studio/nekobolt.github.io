@@ -45,9 +45,10 @@ navLinks.forEach(anchor => {
                 this.classList.add('active');
                 updateIndicator(this);
 
-                const headerOffset = 100;
+                const header = document.querySelector('header');
+                const headerHeight = header ? header.offsetHeight : 0;
                 const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                const offsetPosition = elementPosition + window.scrollY - headerHeight;
 
                 window.scrollTo({
                     top: offsetPosition,
@@ -138,11 +139,13 @@ const sections = document.querySelectorAll('section[id]');
 
 function highlightNav() {
     if (isScrolling) return; 
-    const scrollY = window.pageYOffset;
+    const scrollY = window.scrollY;
     
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 150;
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        const sectionTop = current.offsetTop - (headerHeight + 50);
         const sectionId = current.getAttribute('id');
         
         const navLink = document.querySelector(`nav ul li a[href*=${sectionId}]`);
@@ -170,9 +173,26 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Update indicator on window resize
+window.addEventListener('resize', () => {
+    const activeLink = document.querySelector('nav ul li a.active');
+    if (activeLink && window.innerWidth > 768) {
+        updateIndicator(activeLink);
+    } else {
+        if (navIndicator) navIndicator.style.opacity = '0';
+    }
+});
+
 // Email Obfuscation Script
 document.addEventListener("DOMContentLoaded", function() {
+    // Initial highlight
     highlightNav();
+    
+    // Ensure nav indicator is correctly positioned on load
+    const activeLink = document.querySelector('nav ul li a.active');
+    if (activeLink) {
+        setTimeout(() => updateIndicator(activeLink), 100);
+    }
 
     var emailElement = document.getElementById("email");
     if (emailElement) {
