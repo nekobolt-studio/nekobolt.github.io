@@ -562,20 +562,45 @@ button:hover, .button:hover {
 }
 
 .avatar {
-    width: clamp(120px, 40vw, 220px);
-    height: clamp(120px, 40vw, 220px);
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     border: 6px solid var(--primary-color);
     box-shadow: var(--neon-glow);
-    margin-bottom: 24px; /* Slightly more space before the name */
+    margin-bottom: 24px;
     object-fit: cover;
-    background: var(--card-bg);
+    background: var(--bg-color);
+    padding: 0;
     transition: var(--transition);
 }
 
-.engineer-avatar, .artist-avatar {
+.engineer-avatar {
     border-color: var(--secondary-color) !important;
     box-shadow: var(--secondary-glow) !important;
+}
+
+.artist-avatar {
+    border-color: var(--primary-color) !important;
+    box-shadow: var(--neon-glow) !important;
+}
+
+.engineer-text {
+    color: var(--secondary-color) !important;
+    text-shadow: 2px 2px 0px var(--primary-color) !important;
+}
+
+.artist-text {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 0px var(--primary-color) !important;
+}
+
+.team-real-name {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    opacity: 0.9;
 }
 
 .team-member:hover .avatar {
