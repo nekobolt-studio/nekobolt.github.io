@@ -202,23 +202,21 @@ body::before {
 }
 
 .hero-image {
-    width: 100%;
-    max-width: 1200px;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    margin-top: 0;
+    margin: 0 auto;
     display: block;
 }
 
 @media (min-width: 1000px) {
     .hero-image {
-        width: 100vw;
+        max-width: 1200px;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
 }
-
-/* Hero Image is already full width */
 
 /* Hero image hover effect removed */
 .container {
