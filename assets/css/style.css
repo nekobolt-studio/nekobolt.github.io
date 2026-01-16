@@ -561,6 +561,14 @@ button:hover, .button:hover {
     max-width: 320px; /* Keep text from getting too wide on desktop */
 }
 
+.team-bio {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
+}
+
 .avatar {
     width: 240px;
     height: 240px;
@@ -601,6 +609,23 @@ button:hover, .button:hover {
     margin-bottom: 25px;
     font-weight: 600;
     opacity: 0.9;
+}
+
+.team-member-extra {
+    margin-top: auto;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.team-member-extra p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+    opacity: 0.8;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .team-member:hover .avatar {
