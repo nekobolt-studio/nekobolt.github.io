@@ -22,10 +22,10 @@ if (hamburgerButton && mainNav) {
 }
 
 // --- Smooth Scrolling & Effects --- //
-const navLinks = document.querySelectorAll('nav ul li a');
+const allNavLinks = document.querySelectorAll('nav ul li a');
 let isScrolling = false;
 
-navLinks.forEach(anchor => {
+allNavLinks.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href');
         
@@ -41,7 +41,7 @@ navLinks.forEach(anchor => {
                 isScrolling = true; // Block scroll-highlighting during smooth scroll
                 
                 // Update active state immediately for better feel
-                navLinks.forEach(l => l.classList.remove('active'));
+                allNavLinks.forEach(l => l.classList.remove('active'));
                 this.classList.add('active');
                 updateIndicator(this);
 
@@ -152,7 +152,7 @@ function highlightNav() {
         
         if (navLink) {
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                navLinks.forEach(l => l.classList.remove('active'));
+                allNavLinks.forEach(l => l.classList.remove('active'));
                 navLink.classList.add('active');
                 updateIndicator(navLink);
             } else {

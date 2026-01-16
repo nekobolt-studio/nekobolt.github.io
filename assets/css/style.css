@@ -458,6 +458,10 @@ button:hover, .button:hover {
         height: 45px;
     }
 
+    nav#main-nav {
+        position: static;
+    }
+
     nav#main-nav ul {
         display: flex;
         flex-direction: column;
