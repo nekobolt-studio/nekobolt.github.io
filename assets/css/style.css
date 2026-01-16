@@ -229,7 +229,7 @@ body::before {
 }
 
 header {
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -249,9 +249,15 @@ header {
     width: 100%;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 36px;
+    height: 60px;
     width: auto;
+    border-radius: var(--radius-sm);
     transition: var(--transition);
 }
 
@@ -444,8 +450,12 @@ button:hover, .button:hover {
 
 @media (max-width: 768px) {
     header {
-        padding: 12px 0;
+        padding: 8px 0;
         margin-bottom: 40px;
+    }
+
+    .logo img {
+        height: 45px;
     }
 
     nav#main-nav ul {
