@@ -1151,14 +1151,27 @@ hr {
 
 .social-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    line-height: 0;
 }
 
 .social-icon {
     width: 36px;
     height: 36px;
+    object-fit: contain;
+    display: block;
     transition: var(--transition);
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
 }
