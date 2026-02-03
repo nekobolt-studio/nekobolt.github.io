@@ -1,3 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" shape-rendering="crispEdges">
-  <path d="M1 0h2v2H1V0z M1 2h2v5H1V2z M5 0h2v3H5V0z" fill="white"/>
+  <!-- TikTok: left note head + stem + right curve (connected) -->
+  <path d="M1 0h2v2H1V0z M2 2h2v5H2V2z M4 0h3v2H4V0z M4 2h2v4H4V2z" fill="white"/>
 </svg>
