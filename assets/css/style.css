@@ -959,30 +959,19 @@ button:hover, .button:hover {
 }
 
 /* --- Section Width Fixes --- */
-#hero, #team, #games, #assets, #consulting, #connect {
+#hero, #team, #games, #games-weve-worked-on, #assets, #consulting, #connect {
     width: 100%;
     padding: 40px 0; /* Standardized for better vertical rhythm with separators */
 }
 
 @media (max-width: 768px) {
-    #hero, #team, #games, #assets, #consulting, #connect {
+    #hero, #team, #games, #games-weve-worked-on, #assets, #consulting, #connect {
         padding: 30px 0; /* Tighter on mobile */
     }
 }
 
 #hero {
     padding-top: 60px; /* Offset for sticky header */
-}
-
-/* Same space above subsection headlines as above main section headlines (40px) */
-#games .retro-separator {
-    height: 40px;
-}
-
-@media (max-width: 768px) {
-    #games .retro-separator {
-        height: 30px;
-    }
 }
 
 .tagline {
