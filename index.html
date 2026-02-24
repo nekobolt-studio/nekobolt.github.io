@@ -23,6 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
@@ -38,7 +39,7 @@
     <header>
         <div class="container header-content">
             <a href="#" class="logo">
-                <img src="assets/images/nekobolt_moving_heart.gif" alt="Nekobolt Logo">
+                <img src="assets/images/nekobolt_moving_heart.gif" alt="Nekobolt Logo" width="60" height="60">
             </a>
             <nav id="main-nav">
                 <ul>
@@ -60,24 +61,24 @@
         <section id="hero">
             <div class="hero-content">
                 <h1 class="glitch-text">
-                    <span style="font-size: 0.6em; opacity: 0.9; vertical-align: middle; display: block; margin-bottom: -5px; letter-spacing: 2px;">Welcome to</span>
+                    <span class="hero-welcome">Welcome to</span>
                     <span class="firework-wrapper">
-                        <span style="color: var(--primary-color); text-shadow: 2px 2px 0px var(--secondary-color);">Nekobolt</span>
-                        <span class="firework-particle" style="--x: -40px; --y: -40px; top: 20%; left: 10%; animation-delay: 0s;"></span>
-                        <span class="firework-particle" style="--x: 40px; --y: -40px; top: 20%; left: 90%; animation-delay: 0.3s;"></span>
-                        <span class="firework-particle" style="--x: -50px; --y: 0px; top: 50%; left: 0%; animation-delay: 0.6s;"></span>
-                        <span class="firework-particle" style="--x: 50px; --y: 0px; top: 50%; left: 100%; animation-delay: 0.9s;"></span>
-                        <span class="firework-particle" style="--x: -40px; --y: 40px; top: 80%; left: 10%; animation-delay: 1.2s;"></span>
-                        <span class="firework-particle" style="--x: 40px; --y: 40px; top: 80%; left: 90%; animation-delay: 1.5s;"></span>
-                        <span class="firework-particle" style="--x: 0px; --y: -60px; top: 0%; left: 50%; animation-delay: 1.8s;"></span>
-                        <span class="firework-particle" style="--x: 0px; --y: 60px; top: 100%; left: 50%; animation-delay: 2.1s;"></span>
-                        <span class="firework-particle" style="--x: -25px; --y: -25px; top: 30%; left: 20%; background: var(--secondary-color); box-shadow: 0 0 5px var(--secondary-color); animation-delay: 0.4s;"></span>
-                        <span class="firework-particle" style="--x: 25px; --y: -25px; top: 30%; left: 80%; background: var(--secondary-color); box-shadow: 0 0 5px var(--secondary-color); animation-delay: 1.1s;"></span>
+                        <span class="firework-title">Nekobolt</span>
+                        <span class="firework-particle firework-particle-1"></span>
+                        <span class="firework-particle firework-particle-2"></span>
+                        <span class="firework-particle firework-particle-3"></span>
+                        <span class="firework-particle firework-particle-4"></span>
+                        <span class="firework-particle firework-particle-5"></span>
+                        <span class="firework-particle firework-particle-6"></span>
+                        <span class="firework-particle firework-particle-7"></span>
+                        <span class="firework-particle firework-particle-8"></span>
+                        <span class="firework-particle firework-particle-9"></span>
+                        <span class="firework-particle firework-particle-10"></span>
                     </span>
                 </h1>
                 <p class="tagline">A tiny game studio run by one engineer and one artist.<br>We LOVE making <span class="highlight-text">Games</span>, <span class="highlight-text">Apps</span> and <span class="highlight-text">Assets</span>!</p>
             </div>
-            <img src="assets/images/nekobolt_website_into.webp" alt="Nekobolt Website Intro" class="hero-image">
+            <img src="assets/images/nekobolt_website_intro.webp" alt="Nekobolt Website Intro" class="hero-image" width="1020" height="574" sizes="(max-width: 1000px) 100vw, 1020px">
         </section>
 
         <div class="retro-separator">
@@ -93,7 +94,7 @@
             <h2 class="glitch-text">The Team</h2>
             <div id="team-content">
                 <article class="team-member">
-                    <img src="assets/images/engineer.webp" alt="The Engineer" class="avatar engineer-avatar">
+                    <img src="assets/images/engineer.webp" alt="The Engineer" class="avatar engineer-avatar" width="240" height="240" loading="lazy">
                     <h3 class="glitch-text engineer-text">The Engineer</h3>
                     <p class="team-real-name">Mikko Arvola</p>
                     <p class="team-bio">10+ years dev experience breathing life into games and software. Big on coding, tool-making, exercise, and tasty food.</p>
@@ -103,7 +104,7 @@
                     </div>
                 </article>
                 <article class="team-member artist">
-                    <img src="assets/images/artist.webp" alt="The Artist" class="avatar artist-avatar">
+                    <img src="assets/images/artist.webp" alt="The Artist" class="avatar artist-avatar" width="240" height="240" loading="lazy">
                     <h3 class="glitch-text artist-text">The Artist</h3>
                     <p class="team-real-name">Veera Arvola</p>
                     <p class="team-bio">Graphic designer turned game artist. The creative force behind Nekobolt's visuals, sounds, stories, and vibe. Loves crafts, DIY & Korean TV dramas.</p>
@@ -133,7 +134,7 @@
                     <article class="game-card">
                         <div class="game-logo-wrapper">
                             <a href="baking-success.html">
-                                <img src="assets/images/games_baking_success.webp" alt="Baking Success Logo" class="game-card-logo">
+                                <img src="assets/images/games_baking_success.webp" alt="Baking Success Logo" class="game-card-logo" width="240" height="150" loading="lazy" sizes="(max-width: 600px) 85vw, 240px">
                             </a>
                         </div>
                         <p class="game-card-description">
@@ -145,7 +146,7 @@
                     <article class="game-card">
                         <div class="game-logo-wrapper">
                             <a href="games-at-home.html">
-                                <img src="assets/images/games_games_at_home.webp" alt="Games At Home Logo" class="game-card-logo">
+                                <img src="assets/images/games_games_at_home.webp" alt="Games At Home Logo" class="game-card-logo" width="240" height="150" loading="lazy" sizes="(max-width: 600px) 85vw, 240px">
                             </a>
                         </div>
                         <p class="game-card-description">
@@ -157,7 +158,7 @@
                     <article class="game-card">
                         <div class="game-logo-wrapper">
                             <a href="project-x.html">
-                                <img src="assets/images/games_project_X.webp" alt="Project X Logo" class="game-card-logo">
+                                <img src="assets/images/games_project_X.webp" alt="Project X Logo" class="game-card-logo" width="240" height="150" loading="lazy" sizes="(max-width: 600px) 85vw, 240px">
                             </a>
                         </div>
                         <p class="game-card-description">
@@ -180,25 +181,25 @@
                 <p class="intro-text">Beyond our own titles, we've had the pleasure of contributing to various other projects in the industry.</p>
                 <div class="game-logos-grid">
                     <a href="https://store.steampowered.com/app/405780/Alpha_Polaris__A_Horror_Adventure_Game/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_alpha_polaris.webp" alt="Alpha Polaris" class="game-logo">
+                        <img src="assets/images/games_alpha_polaris.webp" alt="Alpha Polaris" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                     <a href="https://www.youtube.com/watch?v=CEqDXqRE_t4" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_among_the_trolls.webp" alt="Among the Trolls" class="game-logo">
+                        <img src="assets/images/games_among_the_trolls.webp" alt="Among the Trolls" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                     <a href="https://store.steampowered.com/app/602960/Barotrauma/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_barotrauma.webp" alt="Barotrauma" class="game-logo">
+                        <img src="assets/images/games_barotrauma.webp" alt="Barotrauma" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                     <a href="https://store.steampowered.com/app/2334320/Cthulhu_Keeper/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_Cthulhu_Keeper.webp" alt="Cthulhu Keeper" class="game-logo">
+                        <img src="assets/images/games_Cthulhu_Keeper.webp" alt="Cthulhu Keeper" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                     <a href="https://www.christophermeans.info/lonestar/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_fallout_lonestar.webp" alt="Fallout Lonestar" class="game-logo">
+                        <img src="assets/images/games_fallout_lonestar.webp" alt="Fallout Lonestar" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                     <a href="https://store.steampowered.com/app/264140/Pixel_Piracy/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_pixel_piracy.webp" alt="Pixel Piracy" class="game-logo">
+                        <img src="assets/images/games_pixel_piracy.webp" alt="Pixel Piracy" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                     <a href="https://store.steampowered.com/app/342640/Pixel_Privateers/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/games_pixel_privateers.gif" alt="Pixel Privateers" class="game-logo">
+                        <img src="assets/images/games_pixel_privateers.gif" alt="Pixel Privateers" class="game-logo" width="150" height="150" loading="lazy" sizes="150px">
                     </a>
                 </div>
             </div>
@@ -220,91 +221,91 @@
                 <!-- 2025 UAS Packs -->
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/interior/home-decor-modern-luxury-283654" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/luxury_home_pack_420x280.webp" alt="Home Decor - Modern Luxury">
+                        <img src="assets/images/luxury_home_pack_420x280.webp" alt="Home Decor - Modern Luxury" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/asian-food-heaven-45032" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/2025_UAS_asian_food_heaven_card.webp" alt="Asian Food Heaven Pack">
+                        <img src="assets/images/2025_UAS_asian_food_heaven_card.webp" alt="Asian Food Heaven Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/farm-food-pack-21732" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/2025_UAS_farm_food_pack_card.webp" alt="Farm Food Pack">
+                        <img src="assets/images/2025_UAS_farm_food_pack_card.webp" alt="Farm Food Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/survival-food-pack-13290" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/2025_UAS_survival_food_pack_card.webp" alt="Survival Food Pack">
+                        <img src="assets/images/2025_UAS_survival_food_pack_card.webp" alt="Survival Food Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
 
                 <!-- 2023 Heaven Packs -->
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/booze-heaven-pack-32330" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/2023_booze_heaven_packCardImage_420x280.webp" alt="Booze Heaven Pack">
+                        <img src="assets/images/2023_booze_heaven_packCardImage_420x280.webp" alt="Booze Heaven Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/fast-food-heaven-pack-14722" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/2023_fast_food_heaven_pack_cardCardImage_420x280.webp" alt="Fast Food Heaven Pack">
+                        <img src="assets/images/2023_fast_food_heaven_pack_cardCardImage_420x280.webp" alt="Fast Food Heaven Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/candy-heaven-pack-18918" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/candy_heaven_packCardImage_420x280.webp" alt="Candy Heaven Pack">
+                        <img src="assets/images/candy_heaven_packCardImage_420x280.webp" alt="Candy Heaven Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/dessert-heaven-pack-9838" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/dessert_heaven_packCardImage_420x280.webp" alt="Dessert Heaven Pack">
+                        <img src="assets/images/dessert_heaven_packCardImage_420x280.webp" alt="Dessert Heaven Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
 
                 <!-- Other Asset Packs -->
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/supermarket-gluttony-pack-12042" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/2023_SGP_CardImage_420x280.webp" alt="Supermarket Gluttony Pack">
+                        <img src="assets/images/2023_SGP_CardImage_420x280.webp" alt="Supermarket Gluttony Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/tools/survival-health-pack-24835" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/health_pack_CardImage_420x280.webp" alt="Health Pack">
+                        <img src="assets/images/health_pack_CardImage_420x280.webp" alt="Health Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/interior/complete-home-interior-pack-31049" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/home_pack_420x280.webp" alt="Home Pack">
+                        <img src="assets/images/home_pack_420x280.webp" alt="Home Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/tools/survivalist-macgyver-pack-26123" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/macgyver_packCardImage_420x280.webp" alt="MacGyver Pack">
+                        <img src="assets/images/macgyver_packCardImage_420x280.webp" alt="MacGyver Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/environments/survive-nuclear-war-pack-35783" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/nuclear_war_pack_420x280.webp" alt="Nuclear War Pack">
+                        <img src="assets/images/nuclear_war_pack_420x280.webp" alt="Nuclear War Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/tools/survivalist-pandemic-pack-33323" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/pandemic_pack_420x280.webp" alt="Pandemic Pack">
+                        <img src="assets/images/pandemic_pack_420x280.webp" alt="Pandemic Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/post-apocalyptic-food-pack-47094" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/post_apocalyptic_food_packCardImage_420x280.webp" alt="Post-Apocalyptic Food Pack">
+                        <img src="assets/images/post_apocalyptic_food_packCardImage_420x280.webp" alt="Post-Apocalyptic Food Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/space-food-pack-41166" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/space_food_packCardImage_420x280.webp" alt="Space Food Pack">
+                        <img src="assets/images/space_food_packCardImage_420x280.webp" alt="Space Food Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
                 <div class="asset-image-item">
                     <a href="https://assetstore.unity.com/packages/3d/props/food/vending-machine-pack-60921" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/vending_machine_420x280.webp" alt="Vending Machine Pack">
+                        <img src="assets/images/vending_machine_420x280.webp" alt="Vending Machine Pack" width="420" height="280" loading="lazy" sizes="(max-width: 400px) 50vw, (max-width: 700px) 33vw, 156px">
                     </a>
                 </div>
             </div>
@@ -364,19 +365,19 @@
             <p>Contact us: <a href="#" id="email" class="glitch-text">company [at] nekobolt [dot] net</a></p>
             <div class="social-links">
                 <a href="https://x.com/NekoboltTeam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)">
-                    <img src="assets/images/social-x.svg" alt="X (Twitter)" class="social-icon">
+                    <img src="assets/images/social-x.svg" alt="X (Twitter)" class="social-icon" width="36" height="36" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/nekobolt_team/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                    <img src="assets/images/social-instagram.svg" alt="Instagram" class="social-icon">
+                    <img src="assets/images/social-instagram.svg" alt="Instagram" class="social-icon" width="36" height="36" loading="lazy">
                 </a>
                 <a href="https://www.facebook.com/Nekobolt" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                    <img src="assets/images/social-facebook.svg" alt="Facebook" class="social-icon">
+                    <img src="assets/images/social-facebook.svg" alt="Facebook" class="social-icon" width="36" height="36" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/user/Nekobolt" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-                    <img src="assets/images/social-youtube.svg" alt="YouTube" class="social-icon">
+                    <img src="assets/images/social-youtube.svg" alt="YouTube" class="social-icon" width="36" height="36" loading="lazy">
                 </a>
                 <a href="https://www.tiktok.com/@nekobolt_team" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
-                    <img src="assets/images/social-tiktok.svg" alt="TikTok" class="social-icon">
+                    <img src="assets/images/social-tiktok.svg" alt="TikTok" class="social-icon" width="36" height="36" loading="lazy">
                 </a>
             </div>
         </section>
@@ -384,7 +385,7 @@
 
     <footer>
         <div class="container">
-            <p>Copyright &copy; 2026 Nekobolt. All Rights Reserved</p>
+            <p>Copyright &copy; 2025 Nekobolt. All Rights Reserved</p>
         </div>
     </footer>
 
