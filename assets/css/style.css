@@ -389,7 +389,8 @@ h2 {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     color: #ffffff !important;
     text-shadow: 2px 2px 0px var(--primary-color) !important;
-    margin-bottom: 3rem; /* Adjusted now that glitch-text no longer overrides this */
+    margin-top: 0;
+    margin-bottom: 3rem; /* Consistent space below section headlines */
 }
 
 h3 {
@@ -553,7 +554,6 @@ button:hover, .button:hover {
 /* Disable hover effect on detail page cards */
 .details-page .card:hover {
     transform: none;
-    scale: 1;
     border-color: var(--secondary-color);
     box-shadow: 0 0 15px rgba(121, 255, 178, 0.2);
 }
@@ -974,6 +974,17 @@ button:hover, .button:hover {
     padding-top: 60px; /* Offset for sticky header */
 }
 
+/* Same space above subsection headlines as above main section headlines (40px) */
+#games .retro-separator {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    #games .retro-separator {
+        height: 30px;
+    }
+}
+
 .tagline {
     margin: 0 auto 1rem;
 }
@@ -1183,7 +1194,8 @@ hr {
 .intro-text {
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    margin-bottom: 3rem; /* Standardized with heading spacing */
+    margin-top: 0;
+    margin-bottom: 2rem; /* Tighter under intro so headline-to-content rhythm matches sections without intro */
     color: var(--text-color);
     text-align: center;
     max-width: 800px;

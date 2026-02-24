@@ -194,13 +194,4 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => updateIndicator(activeLink), 100);
     }
 
-    var emailElement = document.getElementById("email");
-    if (emailElement) {
-        var emailText = emailElement.textContent;
-        if (emailText.includes(" [at] ")) {
-            var emailAddress = emailText.replace(" [at] ", "@").replace(" [dot] ", ".");
-            emailElement.href = 'mailto:' + emailAddress;
-            emailElement.textContent = emailAddress;
-        }
-    }
 });
